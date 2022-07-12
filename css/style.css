@@ -36,7 +36,7 @@ a {
 }
 
 img.img-logo {
-  height: 46px;
+  height: 50px;
 }
 
 i {
@@ -506,12 +506,12 @@ i {
 }
 @media screen and (min-width: 768px) {
   #overlay img {
-    width: 80%;
+    width: 90%;
   }
 }
 @media screen and (min-width: 1200px) {
   #overlay img {
-    width: 70%;
+    width: 90%;
   }
 }
 #nextButton {
@@ -557,3 +557,39 @@ i {
   }
 }
 /* end of gallery section */
+
+/* Events section */
+
+
+.bg-events{
+  background-color: #faf0ca;
+
+}
+.btn-navy{
+  background-color: #0D3B66;
+}
+.btn-yellow{
+  background-color: #F4D35E;
+
+}
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.btn-circle.btn-xl {
+  width: 75px;
+  height: 75px;
+  padding: 0px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+.
+/* End of  Events section */
