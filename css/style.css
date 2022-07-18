@@ -9,7 +9,7 @@
 html {
   --color-red: #ec0000;
   --color-black: #1c1c1c;
-  --color-blue: #4258fe;
+  --color-blue: #273f8f;
   --color-green: #198754;
   --color-purple: #00bdb3;
   --color-yellow: #dd7a23;
@@ -35,7 +35,13 @@ body {
 a {
   text-decoration: none;
 }
-
+p{
+  font-size: 20px;
+}
+.justify-para{
+  text-align: justify;
+  text-justify: inter-word;
+}
 img.img-logo {
   height: 50px;
 }
@@ -55,11 +61,11 @@ i {
 }
 
 .icon-top {
-  background: var(--color-green);
+  background: #FFF;
 }
 
 .icon-top a {
-  color: #fbfbff;
+  color: #000;
   font-size: 15px;
   transition: color 1s ease;
 }
@@ -90,7 +96,7 @@ i {
   left: 0;
   width: 100%;
   height: 0.5rem;
-  background-image: linear-gradient(90deg, transparent, var(--color-primary));
+  background-image: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   animation: border1 1s linear infinite;
   animation-delay: 0s;
 }
@@ -100,7 +106,7 @@ i {
   left: 0;
   width: 100%;
   height: 0.5rem;
-  background-image: linear-gradient(270deg, transparent, var(--color-primary));
+  background-image: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   animation: border3 1s linear infinite;
   animation-delay: 0s;
 }
@@ -110,7 +116,7 @@ i {
   right: 0;
   height: 100%;
   width: 0.5rem;
-  background-image: linear-gradient(180deg, transparent, var(--color-primary));
+  background-image: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   animation: border2 1s linear infinite;
   animation-delay: 0.5s;
 }
@@ -120,15 +126,15 @@ i {
   left: 0;
   height: 100%;
   width: 0.5rem;
-  background-image: linear-gradient(360deg, transparent, var(--color-primary));
+  background-image: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   animation: border4 1s linear infinite;
   animation-delay: 0.5s;
 }
 
 .features-btn:hover,
 .features-btn:active {
-  background: var(--color-primary);
-  color: #172815;
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  color: #fff !important;
 }
 
 @keyframes border1 {
@@ -173,7 +179,7 @@ i {
   } */
 
 .navbar {
-  background: #0f7840 !important;
+  background: #071956 !important;
   padding: 10px 20px !important;
   transition: padding 2s ease;
 }
@@ -224,19 +230,23 @@ i {
 .nav-item .nav-link {
   position: relative;
   font-weight: 500;
-  margin-left: calc(1rem + 1vw);
-  color: var(--color-black);
+  margin-left: calc(0.7rem + 1vw);
+  color: #fff !important;
 }
 
 .nav-item .nav-link .btn {
   font-weight: 500 !important;
+  color: #fff;
+  padding: 0;
 }
 
-.nav-item .nav-link:hover {
+.nav-item .nav-link:hover, .nav-item .nav-link .btn:hover {
   text-decoration: none;
   background: var(--color-primary);
-}
+  color: var(--color-black) !important;
 
+}
+ 
 .nav-item .nav-active {
   border-bottom: 3px solid var(--color-primary);
 }
@@ -284,7 +294,7 @@ i {
 
 .showcase__content--title {
   text-align: center;
-  font-size: calc(0.5rem + 5vw);
+  font-size: calc(0.5rem + 4vw);
   font-weight: 300;
   background-image: linear-gradient(
     135deg,
@@ -372,6 +382,11 @@ i {
 }
 
 /* end of showcase section */
+
+/* Greetings section */
+.greeting-h2{
+  color: var(--color-blue)
+}
 
 /*^*^**^*^* features section *^*^**^*^**/
 .features-content:nth-child(1) {
@@ -649,7 +664,7 @@ i {
   height: 80px;
   width: 120px;
 }
-
+/* admission section */
 .admission-img img{
   width: 100%;
   height: 500px;
@@ -667,4 +682,22 @@ i {
   color: #fff;
  
 }
+/* end of admission section */
 
+/* course section */
+.img-courses img{
+  width: 100%;
+  height: 187px;
+}
+/* end of course section */
+
+/* why us section */
+.blue-text{
+  color: var(--color-blue);
+}
+.blue-background{
+  background: var(--color-blue);
+}
+.footer-background{
+  background: #1c2433 !important;
+}
