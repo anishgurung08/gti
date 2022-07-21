@@ -5,6 +5,15 @@ $(document).ready(function () {
   });
 });
 
+document.getElementById("dateTime").innerHTML = formatAMPM();
+
+	function formatAMPM() {
+		var d = new Date();
+		months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+		days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+		return d.getFullYear()+' '+months[d.getMonth()]+' '+d.getDate()+', '+days[d.getDay()];
+	}
+
   //adding background and fixed
   $(window).scroll(function () {
     let position = $(this).scrollTop();
